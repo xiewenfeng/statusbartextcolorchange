@@ -1,0 +1,2 @@
+# statusbartextcolorchange
+android状态栏背景及文字变色
