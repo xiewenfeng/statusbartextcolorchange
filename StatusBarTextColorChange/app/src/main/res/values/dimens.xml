@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="font_normal">16sp</dimen>
+    <dimen name="toollbar_height">48dp</dimen>
+    <dimen name="padding_status_bar_height">0dp</dimen>
+    <dimen name="titlebar_height">73dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="font_large">18sp</dimen>
+</resources>

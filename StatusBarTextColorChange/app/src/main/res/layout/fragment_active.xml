@@ -1,0 +1,37 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical">
+        <!--这个是隐藏的布局，然后通过动态的设置高度达到效果-->
+        <LinearLayout
+            android:id="@+id/ll_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toollbar_height"
+            android:background="@drawable/topbar_generic">
+
+            <TextView
+                android:id="@+id/active_title_tv"
+                style="@style/layout_ww"
+                android:layout_centerInParent="true"
+                android:text="进行中"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_large" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/active_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</layout>

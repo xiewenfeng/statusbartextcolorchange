@@ -1,0 +1,43 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--这个是隐藏的布局，然后通过动态的设置高度达到效果-->
+        <LinearLayout
+            android:id="@+id/ll_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toollbar_height"
+            android:background="@drawable/topbar_generic">
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:textColor="@color/text_main_color"
+                android:text="@string/all_photo"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/titlebar_right_tv"
+                style="@style/main_content_text_style"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/margin_10dp"
+                android:gravity="center_vertical"
+                android:text="@string/confirm"/>
+        </RelativeLayout>
+        <FrameLayout
+            android:id="@+id/fmImageList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,100 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp">
+
+            <FrameLayout
+                style="@style/layout_mw"
+                android:background="@drawable/mine_banner_bg_defait">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/toollbar_height"
+                    android:layout_marginTop="25dp">
+
+                    <TextView
+                        style="@style/layout_ww"
+                        android:layout_centerInParent="true"
+                        android:text="个人中心"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/setting_iv"
+                        style="@style/layout_ww"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_10dp"
+                        android:src="@android:drawable/ic_menu_camera" />
+                </RelativeLayout>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="180dp">
+
+                <ImageView
+                    android:id="@+id/avatar_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/mine_touxiang_icon_weishangchuan" />
+
+
+                <ImageView
+                    style="@style/layout_ww"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:padding="@dimen/margin_8dp"
+                    android:src="@drawable/photo_icon" />
+            </FrameLayout>
+
+
+        </FrameLayout>
+
+        <TextView
+            style="@style/layout_mw"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:gravity="center_horizontal"
+            android:text="怀桑槐桑"
+            android:textColor="@color/text_main_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fans_tv"
+            style="@style/layout_mw"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:gravity="center_horizontal"
+            android:text="粉比 88     关注 88"
+            android:textColor="@color/text_gray_color"
+            android:textSize="13sp" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@color/white"
+            app:tabIndicatorColor="@color/light_blue_color"
+            app:tabSelectedTextColor="@color/light_blue_color" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </LinearLayout>
+</layout>

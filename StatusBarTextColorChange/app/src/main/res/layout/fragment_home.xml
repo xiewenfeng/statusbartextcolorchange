@@ -1,0 +1,55 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="188dp"
+                app:indicator_drawable_selected="@drawable/guide_blue_drawable"
+                app:indicator_drawable_unselected="@drawable/guide_gray_drawable" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            style="@style/layout_mw"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@color/alpha_80_black">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toollbar_height"
+                android:layout_alignParentBottom="true">
+
+
+                <TextView
+                    android:id="@+id/search_et"
+                    style="@style/layout_mw"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/margin_8dp"
+                    android:background="@drawable/home_searchbox_drawable"
+                    android:drawableLeft="@android:drawable/ic_menu_search"
+                    android:drawablePadding="3dp"
+                    android:padding="@dimen/margin_8dp"
+                    android:text="搜索"
+                    android:textColor="@color/search_hint_text_color"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</layout>

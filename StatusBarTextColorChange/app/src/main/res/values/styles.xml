@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:textCursorDrawable">@color/main_color</item>
+    </style>
+    
+    <style name="layout_ww">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layout_mw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 输入框样式-->
+    <style name="input_edit_style" parent="layout_mw">
+        <item name="android:layout_marginLeft">@dimen/margin_10dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_10dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/input_hint_color</item>
+        <item name="android:textColor">@color/text_main_color</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <!--分隔线-->
+    <style name="divide_line">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/colorLineItem</item>
+    </style>
+
+    <!--按钮-->
+    <style name="bottom_btn_style" parent="layout_mw">
+        <item name="android:background">@drawable/bottom_btn_drawable</item>
+        <item name="android:layout_marginLeft">@dimen/margin_10dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_10dp</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColorHint">@color/login_btn_text_hint</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--titleBar样式-->
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="actionBarItemBackground">@drawable/abc_item_background_holo_light</item>
+        <item name="selectableItemBackground">@drawable/abc_item_background_holo_light</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--正常正文色体-->
+    <style name="main_content_text_style" parent="layout_ww">
+        <item name="android:textColor">@color/text_main_color</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">状态栏变色</string>
+    <string name="input_account_hint">请输入账号</string>
+    <string name="input_pwd_hint">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="close">关闭</string>
+    <string name="all_photo">所有照片</string>
+    <string name="confirm">确认</string>
+</resources>

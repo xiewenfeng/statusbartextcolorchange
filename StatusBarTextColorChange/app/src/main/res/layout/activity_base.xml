@@ -1,0 +1,71 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toollbar_height"
+            android:background="@drawable/topbar_generic"
+            app:contentInsetStart="0.0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ToolbarStyle">
+
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                style="@style/layout_ww"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:background="@null"
+                android:src="@drawable/nav_icon_return" />
+
+            <TextView
+                android:id="@+id/left_title_tv"
+                style="@style/main_content_text_style"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:onClick="titleLeftClick"
+                android:textColor="@color/text_main_color" />
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:textColor="@color/text_main_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/titlebar_right_tv"
+                style="@style/main_content_text_style"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/margin_10dp"
+                android:gravity="center_vertical"
+                android:onClick="titleRightClick" />
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toollbar_height"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:visibility="gone"
+                app:divider="@color/white" />
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>
