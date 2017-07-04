@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
 import com.smilexie.statusbartextcolorchange.R;
+import com.smilexie.statusbartextcolorchange.TestHtmlActivity;
 import com.smilexie.statusbartextcolorchange.UserInfoActivity;
 import com.smilexie.statusbartextcolorchange.base.BaseFragment;
 import com.smilexie.statusbartextcolorchange.databinding.FragmentMineBinding;

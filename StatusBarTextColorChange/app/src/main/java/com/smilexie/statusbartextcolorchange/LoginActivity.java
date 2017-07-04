@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.smilexie.statusbartextcolorchange.base.BaseActivity;
 import com.smilexie.statusbartextcolorchange.databinding.ActivityLoginBinding;
+import com.smilexie.statusbartextcolorchange.util.Utils;
 
 /**
  * 登录页面，点击登录按钮进入主页
@@ -19,6 +20,7 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding> {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        Utils.setStatusTextColor(true, LoginActivity.this);
         setRightTitle(getString(R.string.register));
         setLeftTitle(getString(R.string.close));
         hideBackBtn();

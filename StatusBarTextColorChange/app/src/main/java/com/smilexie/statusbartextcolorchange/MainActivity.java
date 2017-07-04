@@ -109,32 +109,22 @@ public class MainActivity extends AppCompatActivity {
             //首页
             case 0:
                 hideShowFragment(transaction, fourFragment, thirdFragment, secondFragment, homeFragment);
-                getWindow().getDecorView().setSystemUiVisibility(
-                        View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
-                getWindow().getDecorView().findViewById(android.R.id.content).setPadding(0, 0, 0, Utils.navigationHeight);
+                Utils.setStatusTextColor(false, MainActivity.this);
                 break;
             //活动页
             case 1:
                 hideShowFragment(transaction, homeFragment, thirdFragment, fourFragment, secondFragment);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-                }
-                getWindow().getDecorView().findViewById(android.R.id.content).setPadding(0, 0, 0, Utils.navigationHeight);
+                Utils.setStatusTextColor(true, MainActivity.this);
                 break;
             //相册
             case 2:
                 hideShowFragment(transaction, homeFragment, fourFragment, secondFragment, thirdFragment);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-                }
-                getWindow().getDecorView().findViewById(android.R.id.content).setPadding(0, 0, 0, Utils.navigationHeight);
+                Utils.setStatusTextColor(true, MainActivity.this);
                 break;
             //我的
             case 3:
                 hideShowFragment(transaction, homeFragment, secondFragment, thirdFragment, fourFragment);
-                getWindow().getDecorView().setSystemUiVisibility(
-                        View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
-                getWindow().getDecorView().findViewById(android.R.id.content).setPadding(0, 0, 0, Utils.navigationHeight);
+                Utils.setStatusTextColor(false, MainActivity.this);
                 break;
             default:
                 break;
